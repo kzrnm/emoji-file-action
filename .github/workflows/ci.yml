@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -59,7 +60,7 @@ jobs:
         with:
           file: __tests__/emoji🕵️.txt
 
-      - name: Test Local Action
+      - name: Test Remote Action
         id: test-remote-action
         uses: kzrnm/emoji-file-action@main
         with:
