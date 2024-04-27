@@ -59,6 +59,8 @@ jobs:
         with:
           file: __tests__/emoji🕵️.txt
 
-      - name: Print Output
-        id: output
-        run: echo "${{ steps.test-action.outputs.time }}"
+      - name: Test Local Action
+        id: test-remote-action
+        uses: kzrnm/emoji-file-action@main
+        with:
+          file: __tests__/emoji🕵️.txt

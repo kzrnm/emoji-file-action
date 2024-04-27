@@ -2739,8 +2739,8 @@ async function run() {
     console.log('Node version')
     console.log(process.versions)
 
-    console.log('read file')
-    console.log(await fs.readFile(filePath))
+    console.log('stat file')
+    console.log(await fs.stat(filePath))
   } catch (error) {
     // Fail the workflow run if an error occurs
     core.setFailed(error.message)

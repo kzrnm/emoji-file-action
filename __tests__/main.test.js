@@ -34,6 +34,6 @@ describe('action', () => {
     await main.run()
 
     expect(logMock).toHaveBeenNthCalledWith(1, 'Node version')
-    expect(logMock).toHaveBeenNthCalledWith(3, 'read file')
+    expect(logMock).toHaveBeenNthCalledWith(3, 'stat file')
   })
 })
